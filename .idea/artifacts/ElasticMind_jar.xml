@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="ElasticMind:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ElasticMind_jar</output-path>
+    <root id="archive" name="ElasticMind.jar">
+      <element id="module-output" name="ElasticMind" />
+      <element id="directory" name="META-INF">
+        <element id="dir-copy" path="$PROJECT_DIR$/src/main/java/META-INF" />
+      </element>
+      <element id="directory" name="lib">
+        <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.typesafe.akka/akka-actor_2.11/2.3.9/402af1579ddb9338792ba4f93552eb5ec7b0237b/akka-actor_2.11-2.3.9.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.fastjson/boon/0.32/be936dfc68588c2e8c5b96a9340257176a111939/boon-0.32.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.typesafe/config/1.2.1/f771f71fdae3df231bcd54d5ca2d57f0bf93f467/config-1.2.1.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.carrotsearch/hppc/0.6.0/2ab7d8d4aff373071227761836a28313b322d13e/hppc-0.6.0.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.11.5/a5544bb030c5e6c3d81ad116b7dc5024f047df26/scala-library-2.11.5.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.5.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="$USER_HOME$/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.5.jar" path-in-jar="/" />
+      </element>
+    </root>
+  </artifact>
+</component>

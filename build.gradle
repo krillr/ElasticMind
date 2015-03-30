@@ -1,0 +1,36 @@
+apply plugin: 'scala'
+apply plugin: 'gradle-one-jar'
+
+sourceCompatibility = 1.8
+version = '0.0.1'
+
+repositories {
+    mavenCentral()
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.github.rholder:gradle-one-jar:1.0.4'
+    }
+}
+
+dependencies {
+    compile 'org.scala-lang:scala-library:2.11.5'
+    compile 'com.typesafe.akka:akka-actor_2.11:2.3.9'
+    testCompile 'org.scala-lang:scala-library:2.11.1'
+    testCompile 'com.typesafe.akka:akka-actor_2.11:2.3.9'
+    testCompile 'junit:junit:4.11'
+}
+
+jar {
+    manifest {
+        attributes("Main-Class": "io.elasticmind.ElasticMind")
+    }
+}
+
+task standalone(type: OneJar) {
+    mainClass = 'io.elasticmind.ElasticMind'
+}
